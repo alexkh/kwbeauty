@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+html, body {
+	margin: 0;
+	font-family: "Karla", sans-serif;
+	font-size: 26px;
+	box-sizing: border-box;
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.header_bar {
+	color: #fff;
+	font-size: 2rem;
+	line-height: 4em;
+	padding-left: 1em;
+	height: 4em;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%,
+				rgba(9,9,121,1) 35%,
+				rgba(7,144,142,1) 46%,
+				rgba(6,80,163,1) 60%,
+				rgba(4,18,142,1) 67%,
+				rgba(59,83,108,1) 72%,
+				rgba(53,66,124,1) 75%,
+				rgba(47,122,140,1) 78%,
+				rgba(0,172,212,1) 80%,
+				rgba(0,212,255,1) 100%);
+}
+
+.hidden {
+	display: none;
+}
+
+.nav_bar {
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 1000px;
+	margin: auto;
+}
+
+.nav_bar div {
+	padding: 0 1em;
+	user-select: none;
+	cursor: pointer;
+	font-weight: bold;
+	line-height: 2em;
+	height: 2em;
+}
+
+.nav_bar div.selected {
+	background-color: #fff;
+	color: #000;
+	height: 2em;
+	border-left: 0.1em solid #000;
+	border-right: 0.1em solid #000;
+	border-top: 0.1em solid #000;
+}
+
+.nav_bar div:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.pages {
+	flex-grow: 1;
+	position: relative;
+	z-index: 10;
+	width: 1010px;
+	margin: auto;
+	margin-top: -0.08em;
+	margin-bottom: 1em;
+	border: 0.1em solid #000;
+}
+
+.pages div {
+	padding: 0.1em 1em;
+	overflow: scroll;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+blockquote p.author {
+	text-align: right;
+}
+
+ul {
+	font-size: 0.8em;
+}
+
