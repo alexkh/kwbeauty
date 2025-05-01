@@ -9,3 +9,4 @@ A beauty salon website
   main - production, fully tested and working clients-facing version of the site
   dev - production-ready, to be approved by our client before merging to main
 
+
